@@ -1,0 +1,1204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Admin Dashboard</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<meta name="viewport" content="width=device-width" />
+
+
+	<!-- Bootstrap core CSS     -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+	<!--  Paper Dashboard core CSS    -->
+	<link href="assets/css/paper-dashboard.css" rel="stylesheet" />
+
+	<link href="./assets/css/daterangepicker.css" rel="stylesheet">
+
+	<!--  CSS for Demo Purpose, don't include it in your project     -->
+	<link href="assets/css/demo.css" rel="stylesheet" />
+
+	<link href="assets/css/chartist-plugin-legend.css" rel="stylesheet" />
+	<link href="assets/css/chartist-plugin-tooltip.css" rel="stylesheet" />
+
+	<!--  Fonts and icons     -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+	<link href="assets/css/themify-icons.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="sidebar" data-background-color="red" data-active-color="danger" data-image="assets/img/backgroud/background-1.jpg">
+			<!--
+			Tip 1: you can change the color of the sidebar's background using: data-background-color="white | brown"
+			Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
+		-->
+			<div class="logo">
+				<div class="user">
+					<div class="info">
+						<div class="photo">
+							<span class="sidebar-mini">
+								<img src="assets/img/admin_logo.png" />
+							</span>
+						</div>
+						<a class="simple-text logo-normal" href="https://www.creative-tim.com">
+							Prieds Admin
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="sidebar-wrapper">
+				<div class="user">
+					<div class="photo">
+						<span class="sidebar-mini">
+							<img src="assets/img/faces/face-1.jpg" />
+						</span>
+					</div>
+					<div class="info">
+						<a data-toggle="collapse" href="#collapseExample" class="collapsed">
+							<span>
+								Admin
+								<b class="caret"></b>
+							</span>
+						</a>
+
+						<div class="collapse" id="collapseExample">
+							<ul class="nav">
+								<li>
+									<a href="#profile">
+										<span class="sidebar-mini">Mp</span>
+										<span class="sidebar-normal">My Profile</span>
+									</a>
+								</li>
+								<li>
+									<a href="#edit">
+										<span class="sidebar-mini">Ep</span>
+										<span class="sidebar-normal">Edit Profile</span>
+									</a>
+								</li>
+								<li>
+									<a href="#settings">
+										<span class="sidebar-mini">S</span>
+										<span class="sidebar-normal">Settings</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<ul class="nav">
+					<li class="active">
+						<a href="../dashboard.html">
+							<i class="ti-panel"></i>
+							<p>Dashboard
+							</p>
+						</a>
+					</li>
+					<li>
+						<a data-toggle="collapse" href="#laporanExamples">
+							<i class="ti-package"></i>
+							<p>Laporan
+								<b class="caret"></b>
+							</p>
+						</a>
+						<div class="collapse" id="laporanExamples">
+							<ul class="nav">
+								<li>
+									<a href="laporan/buttons.html">
+										<span class="sidebar-mini">B</span>
+										<span class="sidebar-normal">Laporan Data Transaksi</span>
+									</a>
+								</li>
+								<li>
+									<a href="laporan/grid.html">
+										<span class="sidebar-mini">GS</span>
+										<span class="sidebar-normal">Laporan Per Kategori</span>
+									</a>
+								</li>
+								<li>
+									<a href="laporan/panels.html">
+										<span class="sidebar-mini">P</span>
+										<span class="sidebar-normal">Laporan Per Produk</span>
+									</a>
+								</li>
+								<li>
+									<a href="laporan/sweet-alert.html">
+										<span class="sidebar-mini">SA</span>
+										<span class="sidebar-normal">Laporan Pembelian Stock</span>
+									</a>
+								</li>
+								<li>
+									<a href="laporan/notifications.html">
+										<span class="sidebar-mini">N</span>
+										<span class="sidebar-normal">Laporan Pembayaran Kredit</span>
+									</a>
+								</li>
+								<li>
+									<a href="laporan/icons.html">
+										<span class="sidebar-mini">I</span>
+										<span class="sidebar-normal">Laporan Harian</span>
+									</a>
+								</li>
+								<li>
+									<a href="laporan/typography.html">
+										<span class="sidebar-mini">T
+										</span>
+										<span class="sidebar-normal">Laporan Bulanan</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a data-toggle="collapse" href="#formsExamples">
+							<i class="ti-clipboard"></i>
+							<p>
+								Forms
+								<b class="caret"></b>
+							</p>
+						</a>
+						<div class="collapse" id="formsExamples">
+							<ul class="nav">
+								<li>
+									<a href="forms/regular.html">
+										<span class="sidebar-mini">Rf</span>
+										<span class="sidebar-normal">Regular Forms</span>
+									</a>
+								</li>
+								<li>
+									<a href="forms/extended.html">
+										<span class="sidebar-mini">Ef</span>
+										<span class="sidebar-normal">Extended Forms</span>
+									</a>
+								</li>
+								<li>
+									<a href="forms/validation.html">
+										<span class="sidebar-mini">Vf</span>
+										<span class="sidebar-normal">Validation Forms</span>
+									</a>
+								</li>
+								<li>
+									<a href="forms/wizard.html">
+										<span class="sidebar-mini">W</span>
+										<span class="sidebar-normal">Wizard</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a data-toggle="collapse" href="#tablesExamples">
+							<i class="ti-view-list-alt"></i>
+							<p>
+								Table list
+								<b class="caret"></b>
+							</p>
+						</a>
+						<div class="collapse" id="tablesExamples">
+							<ul class="nav">
+								<li>
+									<a href="tables/regular.html">
+										<span class="sidebar-mini">RT</span>
+										<span class="sidebar-normal">Regular Tables</span>
+									</a>
+								</li>
+								<li>
+									<a href="tables/extended.html">
+										<span class="sidebar-mini">ET</span>
+										<span class="sidebar-normal">Extended Tables</span>
+									</a>
+								</li>
+								<li>
+									<a href="tables/bootstrap-table.html">
+										<span class="sidebar-mini">BT</span>
+										<span class="sidebar-normal">Bootstrap Table</span>
+									</a>
+								</li>
+								<li>
+									<a href="tables/datatables.net.html">
+										<span class="sidebar-mini">DT</span>
+										<span class="sidebar-normal">DataTables.net</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a data-toggle="collapse" href="#mapsExamples">
+							<i class="ti-map"></i>
+							<p>
+								Maps
+								<b class="caret"></b>
+							</p>
+						</a>
+						<div class="collapse" id="mapsExamples">
+							<ul class="nav">
+								<li>
+									<a href="maps/google.html">
+										<span class="sidebar-mini">GM</span>
+										<span class="sidebar-normal">Google Maps</span>
+									</a>
+								</li>
+								<li>
+									<a href="maps/vector.html">
+										<span class="sidebar-mini">VM</span>
+										<span class="sidebar-normal">Vector maps</span>
+									</a>
+								</li>
+								<li>
+									<a href="maps/fullscreen.html">
+										<span class="sidebar-mini">FSM</span>
+										<span class="sidebar-normal">Full Screen Map</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="charts.html">
+							<i class="ti-bar-chart-alt"></i>
+							<p>Charts</p>
+						</a>
+					</li>
+					<li>
+						<a href="calendar.html">
+							<i class="ti-calendar"></i>
+							<p>Calendar</p>
+						</a>
+					</li>
+					<li>
+						<a data-toggle="collapse" href="#pagesExamples">
+							<i class="ti-gift"></i>
+							<p>
+								Pages
+								<b class="caret"></b>
+							</p>
+						</a>
+						<div class="collapse" id="pagesExamples">
+							<ul class="nav">
+								<li>
+									<a href="pages/timeline.html">
+										<span class="sidebar-mini">TP</span>
+										<span class="sidebar-normal">Timeline Page</span>
+									</a>
+								</li>
+								<li>
+									<a href="pages/user.html">
+										<span class="sidebar-mini">UP</span>
+										<span class="sidebar-normal">User Page</span>
+									</a>
+								</li>
+								<li>
+									<a href="pages/login.html">
+										<span class="sidebar-mini">LP</span>
+										<span class="sidebar-normal">Login Page</span>
+									</a>
+								</li>
+								<li>
+									<a href="pages/register.html">
+										<span class="sidebar-mini">RP</span>
+										<span class="sidebar-normal">Register Page</span>
+									</a>
+								</li>
+								<li>
+									<a href="pages/lock.html">
+										<span class="sidebar-mini">LSP</span>
+										<span class="sidebar-normal">Lock Screen Page</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="main-panel">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-minimize">
+						<button id="minimizeSidebar" class="btn btn-fill btn-icon">
+							<i class="ti-more-alt"></i>
+						</button>
+					</div>
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar bar1"></span>
+							<span class="icon-bar bar2"></span>
+							<span class="icon-bar bar3"></span>
+						</button>
+						<a class="navbar-brand" href="#Dashboard">
+							Dashboard
+						</a>
+					</div>
+					<form class="navbar-form navbar-right">
+						<input type="text" name="daterange" id="filterdate" class="form-control" />
+					</form>
+					<form class="navbar-form navbar-right">
+						<select class="selectpicker" data-style="btn btn-danger btn-block" title="Pilih Cabang" data-size="7" id="selectcabang">
+							<option value="" selected="selected">SEMUA CABANG</option>
+						</select>
+					</form>
+				</div>
+			</nav>
+
+			<div class="content">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="card ">
+								<div class="card-header card-header-icon card-header-info">
+									<div class="card-icon">
+										<i class="material-icons">timeline</i>
+									</div>
+									<h4 class="card-title">Total Omset Seluruh Cabang</h4>
+									<small> - Grand Total </small>
+								</div>
+								<div class="card-content">
+									<div id="chartMain" class="ct-chart"></div>
+								</div>
+								<div class="card-footer">
+									<div class="chart-legend">
+										<i class="fa fa-circle text-danger"></i>KU
+										<i class="fa fa-circle text-info"></i> PARUJAKAN
+										<i class="fa fa-circle text-warning"></i> TUPAREV
+									</div>
+									<hr>
+									<div class="stats">
+										<i class="ti-check"></i> Data information certified
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-sm-6">
+							<div class="card">
+								<div class="card-content">
+									<div class="row">
+										<div class="col-xs-5">
+											<div class="icon-big icon-warning text-center">
+												<i class="ti-money"></i>
+											</div>
+										</div>
+										<div class="col-xs-7">
+											<div class="numbers">
+												<p>Total Revenue</p>
+												<div id="totalrevenue"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-footer">
+									<hr />
+									<div class="stats">
+										<p>
+											<i class="ti-tag"></i>
+											<b>Real-time</b>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6">
+							<div class="card">
+								<div class="card-content">
+									<div class="row">
+										<div class="col-xs-5">
+											<div class="icon-big icon-success text-center">
+												<i class="ti-stats-up"></i>
+											</div>
+										</div>
+										<div class="col-xs-7">
+											<div class="numbers">
+												<p>Total Transaction</p>
+												<div id="totaltransaction"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-footer">
+									<hr />
+									<div class="stats">
+										<p>
+											<i class="ti-tag"></i>
+											<b>Real-time</b>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6">
+							<div class="card">
+								<div class="card-content">
+									<div class="row">
+										<div class="col-xs-5">
+											<div class="icon-big icon-danger text-center">
+												<i class="ti-shopping-cart"></i>
+											</div>
+										</div>
+										<div class="col-xs-7">
+											<div class="numbers">
+												<p>Items Sold</p>
+												<div id="totalitemsold"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-footer">
+									<hr />
+									<div class="stats">
+										<p>
+											<i class="ti-timer"></i>
+											<b>Real-time</b>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-sm-6">
+							<div class="card">
+								<div class="card-content">
+									<div class="row">
+										<div class="col-xs-5">
+											<div class="icon-big icon-warning text-center">
+												<i class="ti-server"></i>
+											</div>
+										</div>
+										<div class="col-xs-7">
+											<div class="numbers">
+												<p>Average Transaction</p>
+												<div id="averagetransaction"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-footer">
+									<hr />
+									<div class="stats">
+										<p>
+											<i class="ti-angle-double-up , text-success"></i>
+											<a class="text-success">
+												<b>Real-time</b>
+												<i class="ti-angle-double-up"></i>
+											</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6">
+							<div class="card">
+								<div class="card-content">
+									<div class="row">
+										<div class="col-xs-5">
+											<div class="icon-big icon-success text-center">
+												<i class="ti-wallet"></i>
+											</div>
+										</div>
+										<div class="col-xs-7">
+											<div class="numbers">
+												<p>Gross Profit</p>
+												<div id="totalgrossprofit"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-footer">
+									<hr />
+									<div class="stats">
+										<p>
+											<i class="ti-tag"></i>
+											<b>Real-time</b>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="card ">
+								<div class="card-header">
+									<div class="col-xs-2">
+										<div class="icon-big icon-info text-left">
+											<i class="ti-world"></i>
+										</div>
+									</div>
+									<h4 class="card-title">Top Sales by Brand</h4>
+									<p class="category">All products that were shipped</p>
+								</div>
+								<div class="card-content">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="table-responsive">
+												<table class="table">
+													<tbody>
+														<tr>
+															<td>
+																<div class="flag">
+																	<img src="assets/img/flags/ID.png">
+																</div>
+															</td>
+															<td>Achilles</td>
+															<td class="text-right">
+																2.920
+															</td>
+															<td class="text-right">
+																53.000.000
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="flag">
+																	<img src="assets/img/flags/ID.png">
+																</div>
+															</td>
+															<td>Bridgestone</td>
+															<td class="text-right">
+																1.300
+															</td>
+															<td class="text-right">
+																20.430.000
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="flag">
+																	<img src="assets/img/flags/ID.png">
+																</div>
+															</td>
+															<td>GT-Radial</td>
+															<td class="text-right">
+																760
+															</td>
+															<td class="text-right">
+																10.350.000
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="flag">
+																	<img src="assets/img/flags/ID.png">
+																</div>
+															</td>
+															<td>Himax</td>
+															<td class="text-right">
+																690
+															</td>
+															<td class="text-right">
+																7.870.000
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="flag">
+																	<img src="assets/img/flags/ID.png">
+																</div>
+															</td>
+															<td>Dunlop</td>
+															<td class="text-right">
+																600
+															</td>
+															<td class="text-right">
+																5.940.000
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="flag">
+																	<img src="assets/img/flags/ID.png">
+																</div>
+															</td>
+															<td>Swallow</td>
+															<td class="text-right">
+																550
+															</td>
+															<td class="text-right">
+																4.340.000
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="card ">
+								<div class="card-header">
+									<div class="col-xs-2">
+										<div class="icon-big icon-info text-left">
+											<i class="ti-world"></i>
+										</div>
+									</div>
+									<h4 class="card-title">Top Sales of Item</h4>
+									<p class="category">All products that were shipped</p>
+								</div>
+								<div class="card-content">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="table-responsive">
+												<table class="table">
+													<tbody>
+														<tr>
+															<td>
+																<div class="flag">
+																	<img src="assets/img/flags/ID.png">
+																</div>
+															</td>
+															<td>Achilles 65/79-130</td>
+															<td class="text-right">
+																2.920
+															</td>
+															<td class="text-right">
+																53.23%
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="flag">
+																	<img src="assets/img/flags/ID.png">
+																</div>
+															</td>
+															<td>Bridgestone 78/65-145</td>
+															<td class="text-right">
+																1.300
+															</td>
+															<td class="text-right">
+																20.43%
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="flag">
+																	<img src="assets/img/flags/ID.png">
+																</div>
+															</td>
+															<td>GT-Radial 85/120-140</td>
+															<td class="text-right">
+																760
+															</td>
+															<td class="text-right">
+																10.35%
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="flag">
+																	<img src="assets/img/flags/ID.png">
+																</div>
+															</td>
+															<td>Bridgestone 90/12-155</td>
+															<td class="text-right">
+																690
+															</td>
+															<td class="text-right">
+																7.87%
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="flag">
+																	<img src="assets/img/flags/ID.png">
+																</div>
+															</td>
+															<td>Dunlop 90/14-170</td>
+															<td class="text-right">
+																600
+															</td>
+															<td class="text-right">
+																5.94%
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="flag">
+																	<img src="assets/img/flags/ID.png">
+																</div>
+															</td>
+															<td>Bridgestone 80/15-165</td>
+															<td class="text-right">
+																550
+															</td>
+															<td class="text-right">
+																4.34%
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title">Hourly Transaction</h5>
+									<p class="category">Last Campaign Performance</p>
+								</div>
+								<div class="card-content">
+									<div id="chartPerformance"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title">Day of The week Sales Amount</h5>
+									<p class="category">
+										<i class="ti-arrow-up"></i>
+										<a class="text-success">55% increase </a> in today sales.</p>
+								</div>
+								<div class="card-content">
+									<div id="chartStock"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title">Hour of the Day Sales Amount</h5>
+									<p class="category">Last Campaign Performance</p>
+								</div>
+								<div class="card-content">
+									<div id="chartDay"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="card ">
+								<div class="card-header card-header-icon card-header-info">
+									<h4 class="card-title">Category By Volume</h4>
+								</div>
+								<div class="card-content">
+									<div id="chartPreferences" class="ct-chart"></div>
+								</div>
+								<div class="card-footer">
+									<div class="chart-legend">
+										<i class="fa fa-circle text-danger"></i>KU
+										<i class="fa fa-circle text-info"></i> PARUJAKAN
+										<i class="fa fa-circle text-warning"></i> TUPAREV
+									</div>
+									<hr>
+									<div class="stats">
+										<i class="ti-check"></i> Data information certified
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="card ">
+								<div class="card-header card-header-icon card-header-info">
+									<h4 class="card-title">Category By Sales</h4>
+								</div>
+								<div class="card-content">
+									<div id="chartPreferences1" class="ct-chart"></div>
+								</div>
+								<div class="card-footer">
+									<div class="chart-legend">
+										<i class="fa fa-circle text-danger"></i>KU
+										<i class="fa fa-circle text-info"></i> PARUJAKAN
+										<i class="fa fa-circle text-warning"></i> TUPAREV
+									</div>
+									<hr>
+									<div class="stats">
+										<i class="ti-check"></i> Data information certified
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="card">
+								<div class="card-header">
+									<h4 class="card-title">Top 5 Items Per Brand</h4>
+									<p class="category">
+										<b>Sales Amount</b>
+									</p>
+								</div>
+								<div class="card-content">
+									<div id="chartActivity"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="card">
+								<div class="card-header">
+									<h4 class="card-title">Top 5 Items Per Brand</h4>
+									<p class="category">
+										<b>Items Amount</b>
+									</p>
+								</div>
+								<div class="card-content">
+									<div id="chartActivity1"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container-fluid">
+				<nav class="pull-left">
+					<ul>
+						<li>
+							<a href="http://www.creative-tim.com">
+								Creative Tim
+							</a>
+						</li>
+						<li>
+							<a href="http://blog.creative-tim.com">
+								Blog
+							</a>
+						</li>
+						<li>
+							<a href="http://www.creative-tim.com/license">
+								Licenses
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="copyright pull-right">
+					&copy;
+					<script>document.write(new Date().getFullYear())</script>, made with
+					<i class="fa fa-heart heart"></i> by
+					<a href="http://www.creative-tim.com">Creative Tim</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+<!--   Core JS Files. Extra: TouchPunch for touch library inside jquery-ui.min.js   -->
+<script src="assets/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="assets/js/perfect-scrollbar.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+<!--  Forms Validations Plugin -->
+<script src="assets/js/jquery.validate.min.js"></script>
+
+<!-- Promise Library for SweetAlert2 working on IE -->
+<script src="assets/js/es6-promise-auto.min.js"></script>
+
+<!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+<script src="assets/js/moment.min.js"></script>
+
+<!--  Date Time Picker Plugin is included in this js file -->
+<script src="assets/js/bootstrap-datetimepicker.js"></script>
+<script src="assets/js/daterangepicker.js"></script>
+<!--  Select Picker Plugin -->
+<script src="assets/js/bootstrap-selectpicker.js"></script>
+
+<!--  Switch and Tags Input Plugins -->
+<script src="assets/js/bootstrap-switch-tags.js"></script>
+
+<!-- Circle Percentage-chart -->
+<script src="assets/js/jquery.easypiechart.min.js"></script>
+
+<!--  Charts Plugin -->
+<script src="assets/js/chartist.min.js"></script>
+
+<!--  Notifications Plugin    -->
+<script src="assets/js/bootstrap-notify.js"></script>
+
+<!-- Sweet Alert 2 plugin -->
+<script src="assets/js/sweetalert2.js"></script>
+
+<!-- Wizard Plugin    -->
+<script src="assets/js/jquery.bootstrap.wizard.min.js"></script>
+
+<!--  Bootstrap Table Plugin    -->
+<script src="assets/js/bootstrap-table.js"></script>
+
+<!--  Plugin for DataTables.net  -->
+<script src="assets/js/jquery.datatables.js"></script>
+
+<!--  Full Calendar Plugin    -->
+<script src="assets/js/fullcalendar.min.js"></script>
+
+<!-- Paper Dashboard PRO Core javascript and methods for Demo purpose -->
+<script src="assets/js/paper-dashboard.js"></script>
+
+<!-- Paper Dashboard PRO DEMO methods, don't include it in your project! -->
+<script src="assets/js/demo.js"></script>
+
+<!-- chartist legend plugin -->
+<script src="assets/js/chartist-plugin-legend.js"></script>
+<script src="assets/js/chartist-plugin-tooltip.js"></script>
+
+<script type="text/javascript">
+
+	function refresh(tanggalmulai, tanggalakhir, lokasi, day, date) {
+		$.ajax({
+			url: "http://localhost:3000/3manunggal/admin/dashboard/refresh",
+			method: "POST",
+			data: {
+				tanggalmulai: tanggalmulai,
+				tanggalakhir: tanggalakhir,
+				lokasi: lokasi
+			},
+			dataType: "json",
+			success: function (result) {
+				//result[0] = hasil ajax revenue per hari per lokasi
+				//result[1] = hasil ajax revenue per hari total dari semua lokasi
+				//result[2] = hasil ajax list semua cabang/lokasi yg ada
+
+				console.log(result);
+				var lines = [];
+				var legends = [];
+
+				for (var i = 0; i < result["mainChart"][2].length; i++) //loop list cabang yang ada
+				{
+					legends[i] = result["mainChart"][2][i].nama;
+					for (var j = 0; j < day; j++) //loop days dalam range yg dipilih
+					{
+						if (result["mainChart"][0].length == 0) {
+							if (lines[i] === undefined) //cek jika lines[i] kosong, maka diisi dngan array kosong
+							{
+								lines[i] = []; //isi dengan array kosong
+							}
+
+							lines[i][j] = 0;	//lokasi dan hari tidakditemukan. maka diberikan angka 0.
+
+						}
+
+						for (var k = 0; k < result["mainChart"][0].length; k++) //loop masing2 hasil ajax yg ada untuk lokasi dan tanggal yang cocok
+						{
+
+							if (result["mainChart"][0][k].lokasi == result["mainChart"][2][i].nama  //cek kesamaan lokasi antara list lokasi yg ada dengan hasil ajax
+								&&
+								date.format("YYYY-M-D") == result["mainChart"][0][k].date.year + "-" + result["mainChart"][0][k].date.month + "-" + result["mainChart"][0][k].date.day)  //cek kesamaan tanggal dengan tanggal hasil ajax
+							{
+								if (lines[i] === undefined) //cek jika lines[i] kosong, maka diisi dngan array kosong
+								{
+									lines[i] = []; //isi dengan array kosong
+								}
+
+								lines[i][j] = result["mainChart"][0][k].totalrevenue; //masukkan angka totalrevenue dari result/hasil ajax
+								break;
+							}
+							else {
+								if (lines[i] === undefined) //cek jika lines[i] kosong, maka diisi dngan array kosong
+								{
+									lines[i] = []; //isi dengan array kosong
+								}
+
+								lines[i][j] = 0;	//lokasi dan hari tidakditemukan. maka diberikan angka 0.
+							}
+						}
+						date.add(1, 'days'); //tambah 1 hari sampai maksimal range yg telah dipilih
+					}
+					date.subtract(day, 'days'); //kembalikan hari ke awal
+				}
+
+				for (var i = 0; i < day; i++) //loop days dalam range yg dipilih
+				{
+					if (result["mainChart"][1].length == 0) {
+						if (lines[result["mainChart"][2].length] === undefined) //cek jika lines[i] kosong, maka diisi dngan array kosong
+						{
+							lines[result["mainChart"][2].length] = []
+						}
+
+						lines[result["mainChart"][2].length][i] = 0;
+
+					}
+
+					for (var k = 0; k < result["mainChart"][1].length; k++) //loop masing2 hasil ajax yg ada untuk lokasi dan tanggal yang cocok
+					{
+						if (date.format("YYYY-M-D") == result["mainChart"][1][k].date.year + "-" + result["mainChart"][1][k].date.month + "-" + result["mainChart"][1][k].date.day)  //cek kesamaan tanggal dengan tanggal hasil ajax
+						{
+							if (lines[result["mainChart"][2].length] === undefined) //cek jika lines[i] kosong, maka diisi dngan array kosong
+							{
+								lines[result["mainChart"][2].length] = []
+							}
+
+							lines[result["mainChart"][2].length][i] = result["mainChart"][1][k].totalrevenue;
+							break;
+						}
+						else {
+							if (lines[result["mainChart"][2].length] === undefined) //cek jika lines[i] kosong, maka diisi dngan array kosong
+							{
+								lines[result["mainChart"][2].length] = []
+							}
+
+							lines[result["mainChart"][2].length][i] = 0;
+						}
+					}
+					date.add(1, 'days');
+				}
+				date.subtract(day, 'days');
+				legends[result["mainChart"][2].length] = "All";
+
+				var labels = [];
+				for (var i = 0; i < day; i++) //loop date
+				{
+					labels[i] = date.format("YYYY-M-D"); //simpen tanggal untuk jadi axis X
+					date.add(1, 'days');	//majuin tanggal 1 hari
+				}
+				date.subtract(day, 'days'); //kembalikan tanggal date ke range awal.
+
+				//console.log(lines);
+
+				var data = {
+					labels: labels,
+					series: lines
+				};
+
+				var options = {
+					seriesBarDistance: 10,
+					axisX: {
+						showGrid: false
+					},
+					//low: 0,
+					//high: 8,
+					fullWidth: true,
+					height: "245px",
+					plugins: [
+
+						Chartist.plugins.tooltip({
+							currency: "Rp.", //accepts '£', '$', '€', etc.
+							//e.g. 4000 => €4,000
+							tooltipFnc: undefined, //accepts function
+							//build custom tooltip
+							transformTooltipTextFnc: undefined, // accepts function
+							// transform tooltip text
+							class: undefined, // accecpts 'class1', 'class1 class2', etc.
+							//adds class(es) to tooltip wrapper
+							anchorToPoint: false, //accepts true or false
+							//tooltips do not follow mouse movement -- they are anchored to the point / bar.
+							appendToBody: false //accepts true or false
+							//appends tooltips to body instead of chart container
+						}),
+						Chartist.plugins.legend({
+							legendNames: legends,
+						})
+					]
+				};
+
+				Chartist.Line('#chartMain', data, options);
+
+				var container = document.getElementById("totalrevenue");
+				container.innerHTML = result["statuscard"][0];
+
+				container = document.getElementById("totaltransaction");
+				container.innerHTML = result["statuscard"][1];
+
+				container = document.getElementById("totalitemsold");
+				container.innerHTML = result["statuscard"][2];
+
+				container = document.getElementById("averagetransaction");
+				if (result["statuscard"][0] == 0)
+					container.innerHTML = 0;
+				else
+					container.innerHTML = result["statuscard"][0] / result["statuscard"][1];
+
+				container = document.getElementById("totalgrossprofit");
+				container.innerHTML = result["statuscard"][3];
+			},
+			error: function (xhr, textStatus, errorThrown) {
+				console.log(xhr);
+				console.log(textStatus);
+				console.log(errorThrown);
+			}
+		});
+	}
+
+	$(document).ready(function () {
+		demo.initStatsDashboard();
+		//demo.initVectorMap();
+		demo.initCirclePercentage();
+		document.getElementById("filterdate").value = "";
+
+		var tanggalmulai = moment().subtract(29, 'days').format('YYYY-MM-DDT00:00:00');
+		var tanggalakhir = moment().format('YYYY-MM-DDT23:59:59');
+		var lokasi = "";
+		var startdate = moment().subtract(29, 'days');
+		var enddate = moment();
+		var day = enddate.diff(startdate, 'days') + 1;
+		var date = startdate;
+
+		console.log(day);
+
+		refresh(tanggalmulai, tanggalakhir, lokasi, day, date);
+
+		$.ajax({
+			url: "http://localhost:3000/3manunggal/admin/dashboard/fetch-branch",
+			method: "GET",
+			dataType: "json",
+			success: function (result) {
+				for (var i = 0; i < result.length; i++) {
+					$("#selectcabang").append('<option value="' + result[i].nama + '">' + result[i].nama + '</option>');
+				}
+
+				$("#selectcabang").selectpicker("refresh");
+			},
+			error: function (xhr, textStatus, errorThrown) {
+				console.log(xhr);
+				console.log(textStatus);
+				console.log(errorThrown);
+			}
+		});
+
+		$("#selectcabang").selectpicker("refresh");
+
+		$('input[name="daterange"]').daterangepicker({
+			opens: 'centre',
+			startDate: moment().subtract(29, 'days'),
+			endDate: moment(),
+		}, function (start, end, label) {
+
+			console.log("A new date selection was made: " + start.format('YYYY-MM-DDT00:00:00') + ' to ' + end.format('YYYY-MM-DDT23:59:59'));
+
+			startdate = start;
+			enddate = end;
+
+			lokasi = "";
+			day = end.diff(start, 'days') + 1;
+			date = start;
+			console.log(day);
+
+			refresh(start.format('YYYY-MM-DDT00:00:00'), end.format('YYYY-MM-DDT23:59:59'), lokasi, day, date);
+
+		});
+
+		$('#selectcabang').on('changed.bs.select', function (e) {
+
+			//console.log(e);
+			//console.log(document.getElementById("selectcabang").value);
+			lokasi = document.getElementById("selectcabang").value
+
+			refresh(startdate.format('YYYY-MM-DDT00:00:00'), enddate.format('YYYY-MM-DDT23:59:59'), lokasi, enddate.diff(startdate, 'days') + 1, startdate);
+		});
+	});
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		demo.initChartsPage();
+	});
+</script>
+
+</html>
